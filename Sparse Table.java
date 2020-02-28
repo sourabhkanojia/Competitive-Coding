@@ -12,7 +12,7 @@ for (int i = 0; i < N; i++){           //K has to satisfy K≥⌊log2(MAXN)⌋+1
 
 for (int j = 1; j <= K; j++){
     for (int i = 0; i + (1 << j) <= N; i++){
-        st[i][j] = min(st[i][j-1], st[i + (1 << (j - 1))][j - 1]);
+        st[i][j] = Math.min(st[i][j-1], st[i + (1 << (j - 1))][j - 1]);
     }
 }
 
@@ -24,4 +24,4 @@ for (int i = 2; i <= MAXN; i++){
 }
 
 int j = log[R - L + 1];
-int minimum = min(st[L][j], st[R - (1 << j) + 1][j]);
+int minimum = Math.min(st[L][j], st[R - (1 << j) + 1][j]);
