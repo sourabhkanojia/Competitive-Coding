@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        FastReader sc = new FastReader();
+        Scanner sc=new Scanner(Sytem.in);
         StringBuilder sb=new StringBuilder();
         int n=sc.nextInt();   // No. of vertex
         int m=sc.nextInt();   // No. of edges
