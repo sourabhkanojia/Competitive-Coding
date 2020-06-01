@@ -9,6 +9,7 @@ class disjointSet{
     public disjointSet(int v){
       this.parent=new int[v];
       this.size=new int[v];
+      makeSet();
     }
     public void makeSet(){
         for(int i=0;i<parent.length;i++){
