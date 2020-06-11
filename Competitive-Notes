@@ -140,15 +140,6 @@ class bit{
         add(l, val);
         add(r + 1, -val);
     }
-//
-    int point_query(int idx) {
-        int res = 0;
-        while(idx>0){
-           res+=tree[idx];
-           i-=i&(-i);
-	}
-	return res; 
-    }
 }
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Sparse Table
