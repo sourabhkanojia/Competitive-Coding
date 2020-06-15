@@ -135,11 +135,6 @@ class bit{
     int rangeSum(int l,int r){
         return sum(r)-sum(l-1);
     }
-//Range Update and Point Query
-    void range_add(int l, int r, int val) {
-        add(l, val);
-        add(r + 1, -val);
-    }
 }
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Sparse Table
